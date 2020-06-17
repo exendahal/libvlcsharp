@@ -2,7 +2,7 @@
 LibVLCSharp is a cross-platform audio and video API for .NET platforms based on VideoLAN's LibVLC Library. It provides a comprehensive multimedia API that can be used across mobile, server and desktop to render video and output audio as well as encode and stream.
 # More: https://github.com/videolan/libvlcsharp
 
-#Nugets used
+## Nugets used
 1. LibVLCSharp
 2. LibVLCSharp.Forms
 3. VideoLAN.LibVLC.Android
