@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="VideoPlayervlc.Home"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <ContentPage.Content>
+        <Grid HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="20">
+                <Button Clicked="Button_Clicked" Text="Download" />
+                <Button Clicked="Button_Clicked_1" Text="Play Local" />
+                <Button Clicked="Button_Clicked_2" Text="Play Remote" />
+            </StackLayout>
+
+
+            <StackLayout
+                x:Name="Downloadprogress"
+                Margin="20"
+                HorizontalOptions="FillAndExpand"
+                IsVisible="false"
+                VerticalOptions="CenterAndExpand">
+                <Frame
+                    Margin="0"
+                    Padding="0"
+                    BorderColor="Gray"
+                    CornerRadius="5"
+                    HasShadow="False">
+                    <StackLayout Margin="20">
+                        <Label
+                            Margin="0,0,0,10"
+                            FontSize="18"
+                            Text="Downloading File"
+                            TextColor="Black" />
+
+                        <ProgressBar
+                            x:Name="styledProgressBar"
+                            HorizontalOptions="Fill"
+                            ProgressColor="#93248E"
+                            WidthRequest="500" />
+                        <Label
+                            x:Name="textProgress"
+                            FontSize="18"
+                            Text="0 %"
+                            TextColor="Black" />
+                      
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

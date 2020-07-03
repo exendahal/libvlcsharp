@@ -10,7 +10,7 @@ namespace VideoPlayervlc
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new Home();
         }
 
         protected override void OnStart()
@@ -19,6 +19,7 @@ namespace VideoPlayervlc
 
         protected override void OnSleep()
         {
+            try { DependencyService.Get<DeleteFile>().DeleteTemp("temp"); } catch { }
         }
 
         protected override void OnResume()
