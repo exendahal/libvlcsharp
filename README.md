@@ -10,5 +10,9 @@ LibVLCSharp is a cross-platform audio and video API for .NET platforms based on 
 
 Make sure you include FontAwesome fonts.</br>
 
+## Features
+AES File encryption and Decryption on Android</br>
+Play video with decrypted file and remove temp file.
+
 ## Preview
 <img src="Screenshots/preview.png" width="250" height="450">
